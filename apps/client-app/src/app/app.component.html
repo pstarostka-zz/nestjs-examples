@@ -6,3 +6,12 @@
   />
 </div>
 <div>Message: {{ hello$ | async | json }}</div>
+
+<button (click)="login()">Login</button>
+<button (click)="save()">Save</button>
+
+<div class="user-card" *ngFor="let item of getAll$ | async">
+  <h5>{{ item?.firstName }} {{ item?.lastName }}</h5>
+  <span>Age: {{ item?.age }}</span>
+  <span>Id: {{ item?._id }}</span>
+</div>

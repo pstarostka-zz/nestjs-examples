@@ -131,3 +131,10 @@ summary {
   width: 16px;
   margin-right: 4px;
 }
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  background-color: silver;
+  margin: 1em;
+}
